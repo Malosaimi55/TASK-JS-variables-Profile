@@ -41,18 +41,38 @@
  * Increment your hacker score
  * */
 
+let vrFullName = "Mohammed AL Osaimi";
+let vrYearOfBirth = 2005;
+let vrHobby = "History";
+let vrFunFact = "I am interested in video games";
+// I don't have picture of myself on this device
+
+console.log(`My name is ${vrFullName} I am ${2023 -vrYearOfBirth} my hobby is ${vrHobby}`);
+
 let stars = 0;
 
-function incrementBy1() {
-  // Increment stars by 1 👇🏻
+console.log(`${stars}`);
+function incrementBy1(value) {
+  value = value + 1;
+  return value;
 }
-function decrementBy1() {
-  // decrement stars by 1 👇🏻
+console.log(`${incrementBy1(stars)}`);
+function decrementBy1(value) {
+  value = value - 1; 
+  return value;
 }
+decrementBy1(stars);
+console.log(`${decrementBy1(stars)}`);
+function incrementBy2(value) {
+  value = value + 2; 
+  return value;
+}
+incrementBy2(stars);
+console.log(`${incrementBy2(stars)}`);
+function decrementBy2(value) {
+  value = value - 2;
+  return value;
+}
+decrementBy2(stars);
+console.log(`${decrementBy2(stars)}`);
 
-function incrementBy2() {
-  // Increment stars by 2 👇🏻
-}
-function decrementBy2() {
-  // decrement stars by 2 👇🏻
-}
